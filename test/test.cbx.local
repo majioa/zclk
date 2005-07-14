@@ -1,0 +1,8 @@
+debugger.PreviousGotoAddresses.1[0]=esi
+debugger.PreviousGotoAddresses.2[0]=edi
+debugger.PreviousGotoAddresses.3[0]=eax
+debugger.previouswatches.1[0]=idx
+debugger.watches.1[0]=3  idx1  37  Watches4  true5  false -1
+debugger.watchgroups.1[0]=Watches
+history.files.active[0]=main.cpp
+history.files.open.1[0]=main.cpp,F;10,755

@@ -1,0 +1,8 @@
+*.o
+*.dll
+*.lib
+*.tds
+*.err
+*.lst
+*~
+*.swp

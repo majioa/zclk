@@ -1,0 +1,47 @@
+;[]-----------------------------------------------------------------[]
+;|   STRINGS.DEF -- zclkernl definition file			     |
+;[]-----------------------------------------------------------------[]
+;
+; $Copyright: 2005$
+; $Revision: 1.1.1.1 $
+;
+
+LIBRARY zclkernl.dll INITINSTANCE
+CODE PRELOAD EXECUTEREAD FIXED NONDISCARDABLE
+DATA SINGLE READWRITE PRELOAD SHARED
+HEAPSIZE 0x1000, 0x100000
+DESCRIPTION 'ZCL kernel class library'
+
+IMPORTS
+KERNEL32.GlobalAlloc
+KERNEL32.GlobalReAlloc
+KERNEL32.GlobalFree
+KERNEL32.GlobalSize
+
+
+EXPORTS
+_mainCRTStartup
+@Memblock@$bctr$qqrul ;MemAlloc
+@Memblock@$bctr$qqrrx8Memblock ;MemRealloc
+@Memblock@Resize$qqrul ;MemAlloc
+@Memblock@$bdtr$qqrv ; MemFree
+@Memblock@Copy$qqrrx8Memblockul
+@Memblock@Copy$qqrrx8Memblock
+@Memblock@$brsh$qqrrx8Memblock
+@Memblock@$blsh$qqrrx8Memblock
+@Memblock@Assign$qqrrx8Memblock
+@Memblock@Swap$qqrrx8Memblock
+@Memblock@Set$qqrculul
+@Memblock@Set$qqrc
+@Memblock@Char$qqrcul
+@Memblock@Char$qqrc
+@Memblock@Compare$qqrrx8Memblock
+@Memblock@Seek$qqrrx8Memblockulul
+@Memblock@Seek$qqrrx8Memblock
+@Memblock@$beql$qqrrx8Memblock
+@Memblock@$bneq$qqrrx8Memblock
+@Memblock@$bgeq$qqrrx8Memblock
+@Memblock@$bleq$qqrrx8Memblock
+@Memblock@$bgtr$qqrrx8Memblock
+@Memblock@$blss$qqrrx8Memblock
+@Memblock@$basg$qqrrx8Memblock
